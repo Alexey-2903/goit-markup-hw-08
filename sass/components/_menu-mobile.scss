@@ -1,0 +1,32 @@
+@media screen and (max-width: 767px) {
+    .menu-mobile {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      z-index: 3;
+      margin: 10px auto;
+      margin-right: 0;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+    }
+    .menu-mobile:hover, .menu-mobile:focus {
+      fill: var(--accent-color);
+    }
+    .menu-mobile .icon-cross {
+      display: none;
+    }
+    .menu-mobile.is-open .icon-cross {
+      display: block;
+      z-index: 4;
+    }
+    .menu-mobile.is-open .icon-menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .menu-mobile {
+      display: none;
+    }
+  }
